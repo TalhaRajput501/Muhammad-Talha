@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# 👋 Hi, I'm Talha Rajput  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **MERN Stack Developer** | Passionate about building modern, scalable web apps.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧑‍💻 About Me
+- 💡 Intermediate MERN stack developer with hands-on experience in **React, Node.js, Express, MongoDB**.  
+- 🎨 Love building full-stack apps with clean UI/UX using **Tailwind CSS & Redux**.  
+- 🔒 Skilled in implementing **JWT authentication, secure APIs, and role-based access**.  
+- 📊 Interested in creating **dashboards, blogs, and management systems**.  
+- 🌱 Currently learning **WebSockets, MongoDB Aggregation, and advanced React patterns**.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
+- **Frontend**: React, Redux, Vite, Tailwind CSS  
+- **Backend**: Node.js, Express, Appwrite  
+- **Database**: MongoDB, Appwrite Database  
+- **Other Tools**: Git, GitHub, Vercel, Netlify, Postman  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📂 Projects
+### 📖 [Blog Website](#)
+- CRUD functionality with **Appwrite backend**.  
+- Users can sign up, create, edit, delete blogs.  
+- Supports image uploads and rich-text editor.  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🏪 [Stock Management System](#)
+- Role-based authentication (**Admin & Employee**).  
+- Manage products, sales, and stock levels.  
+- Dashboard with charts (bar & pie).  
+- Manage User from Dashboard.  
+- The site features a fully responsive design and a smooth, user-friendly interface. 
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🌐 [Agency Website](#)
+- A professional **multi-page business website** built with **Pug**.  
+- Highlights **services, team members, and portfolio** in a modern layout.  
+- **Responsive design** with SEO-friendly structure for better visibility.  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### ☁️ [Weather App](#)
+- A hands-on **learning project** to practice API integration.  
+- Built using **HTML, CSS, JavaScript**, and the **OpenWeather API**.  
+- Provides **real-time weather data** for any city with a simple search.  
+- Clean, minimal UI for a smooth user experience.  
+
+### 🔒 [Password Manager](#)
+- A hands-on **learning project** to practice HTML, CSS, JS and LocalStorage.  
+- Built using **HTML, CSS, JavaScript**, and the **Local Storage**.  
+- **Add**, **edit**, and **delete** entries (site, username/email, password)
+- Clean, minimal UI for a smooth user experience.  
+
+
+### 🎯 [Portfolio Contact Form](#)
+- Built with **React + EmailJS**.  
+- Visitors can reach out directly by submitting the contact form, which delivers messages straight to my inbox.  
+
+---
+
+## 📬 Contact Me
+- 📧 **Email**: muhammadtalha.dev4197@gmail.com 
+- 💼 **LinkedIn**: [linkedin.com/in/m-talha-dev](#)  
+- 💻 **GitHub**: [github.com/TalhaRajput501](#)  
+
+---
+
+✨ _“Code is like humor. When you have to explain it, it’s bad.”_  
