@@ -1,4 +1,3 @@
-// import React from 'react'
 
 import JSLogo from "./JSLogo"
 import ReactLogo from "./ReactLogo"

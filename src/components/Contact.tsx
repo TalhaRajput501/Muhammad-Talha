@@ -1,4 +1,4 @@
-import React, { type FormEvent } from 'react'
+import { type FormEvent } from 'react'
 import emailjs from "@emailjs/browser";
 
 
