@@ -100,7 +100,7 @@ function Projects() {
           description="This was my very first project a simple weather tracker that fetches live data from an API. Even though the idea is basic, building it gave me the confidence that I can turn ideas into working apps and improve as I go. I also put effort into making the UI clean and visually pleasant."
           image="/weather.png"
           gitHubLink='https://www.github.com/TalhaRajput501/check-weather'
-          link="https://www.github.com/TalhaRajput501/check-weather"
+          link="https://weather-of-town.vercel.app/"
 
         />
 
