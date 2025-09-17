@@ -26,7 +26,7 @@ function Toggle() {
         >
           {darkMode ? (
             <Sun className="h-5 w-5 text-yellow-500" />
-          ) : (
+          ) : ( // i use this logic just because if i use moon above my code will break in   production 
             <Moon className="h-5 w-5 text-blue-400" />
           )}
         </span>
