@@ -75,7 +75,7 @@ function Contact() {
               </svg>
 
               <a className="hover:underline">
-                +92 311 4340221
+                +92 319 1748730
               </a>
             </div>
 
