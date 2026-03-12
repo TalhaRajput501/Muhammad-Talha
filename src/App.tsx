@@ -25,9 +25,9 @@ function App() {
         <hr />
 
         {/* Contact me  */}
-        <div className="relative before:opacity-20 before:content-[''] before:absolute before:w-full before:h-full before:bg-cover before:bg-center before:bg-[url('public/test.mp4')]">  
-          <Contact />
-        </div>
+
+        <Contact />
+
 
       </div>
 
