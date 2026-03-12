@@ -60,7 +60,8 @@ function Contact() {
                 className="h-4 w-6 text-[#cb997e] dark:text-[#e09f3e]"
                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"></path><path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"></path></svg>
               <a
-                className="hover:underline break-all"
+                className="hover:underline cursor-pointer break-all"
+                href="mailto:muhammadtalha.dev4197@gmail.com"
               >
                 muhammadtalha.dev4197@gmail.com
               </a>
@@ -135,7 +136,7 @@ function Contact() {
 
           {/* Message */}
           <textarea rows={5} name='message' required placeholder='Enter your message' className='border  px-2 font-semibold  resize-none dark:border-white rounded-lg focus:border-blue-500 my-2 sm:w-[70%] w-[90%] py-1 outline-none text-lg' />
-          <button type='submit' className="px-6 py-3 my-2 bg-blue-600 text-bold text-white rounded-lg hover:bg-blue-700">Send Message</button>
+          <button type='submit' className="px-6 py-3 my-2 bg-blue-600 text-bold text-white rounded-lg hover:bg-blue-700 cursor-pointer">Send Message</button>
         </form>
 
 

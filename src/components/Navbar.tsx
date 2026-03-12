@@ -12,27 +12,29 @@ function Navbar() {
 
   return (
     <nav
-      className="  dark:bg-gray-800  bg-[#b7b7a4] h-15 flex justify-between items-center"
+      className="  dark:bg-gray-800   bg-[#b7b7a4] h-15 flex justify-between items-center"
     >
-      {/* the logo */}
-      <div
-        className="ml-8"
-      >
-        <img className="h-12 w-14 rounded-full" src="/ironman1.png" alt="" />
-      </div>
+      {/* Logo */}
+      <a href="#">
+        <div
+          className="ml-8"
+        >
+          <img className="h-12 w-14 rounded-full" src="/ironman1.png" alt="" />
+        </div>
+      </a>
 
-      {/* the nav items */}
+      {/* Nav items */}
       <div
-        className="sm:flex flex items-center "
+        className="sm:flex flex items-center  "
       >
 
-        {/* dark mode toggle button  */}
+        {/* Dark mode toggle   */}
         <Toggle />
 
 
 
         <ul
-          className={`sm:mr-28 sm:flex sm:absolute sm:right-0 bg-[#b7b7a4] dark:bg-gray-800  sm:h-15 sm:items-center sm:justify-center fixed top-0 mr-0  w-[60%] overflow-y-hidden  transform transition-all duration-200 ease-in-out  h-screen  ${menu ? '  right-0 z-50 ' : '-right-[60%]  '}   `}
+          className={`sm:mr-28 sm:flex sm:absolute sm:right-0 sm:items-center  sm:h-15 sm:justify-center fixed top-0 mr-0  w-[60%] overflow-y-hidden  transform transition-all duration-200 ease-in-out  h-screen  ${menu ? '  right-0 z-50 dark:bg-gray-800  bg-[#b7b7a4]' : '-right-[60%]  '}     `}
         >
 
           <li
