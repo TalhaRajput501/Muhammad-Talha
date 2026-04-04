@@ -53,7 +53,8 @@ function Projects() {
           description="I built a MERN stack inventory and billing system that includes features like user roles, inventory tracking, automated sales billing, and an admin dashboard for monitoring stock and performance. It supports multi-user access with role-based permissions, making business management streamlined and efficient."
           image={path}
           gitHubLink='https://www.github.com/TalhaRajput501/stock-management-system'
-          link="https://www.github.com/TalhaRajput501/stock-management-system"
+          // link="https://www.github.com/TalhaRajput501/stock-management-system"
+          link='https://inventoryflow.azurewebsites.net/'
         />
 
 
