@@ -19,7 +19,7 @@ function Navbar() {
         <div
           className="ml-8"
         >
-          <img className="h-12 w-14 rounded-full" src="/ironman1.png" alt="" />
+          <img className="h-12 w-14 rounded-full" src="/ironman1.webp" alt="" />
         </div>
       </a>
 

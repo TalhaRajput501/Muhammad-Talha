@@ -11,7 +11,7 @@ function Redux({className}: componentProp) {
       <img
             className='rounded-xl   w-22 mx-auto'
             alt="redux"
-            src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
+            src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.webp"
           />
       </div>
 

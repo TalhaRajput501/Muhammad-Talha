@@ -4,17 +4,17 @@ import { ProjectCard } from "./index"
 
 function Projects() {
 
-  let [path, setPath] = useState<string>('/lightInventory.png')
+  let [path, setPath] = useState<string>('/lightInventory.webp')
   
   const html = document.documentElement;
   useEffect(() => {
     const updatePath = () => {
 
       if (html.classList.contains("dark")) {
-        setPath('/inventory.png')
+        setPath('/inventory1.webp')
         
       } else {
-        setPath('/lightInventory.png')
+        setPath('/lightInventory.webp')
         
       }
     }
@@ -68,7 +68,7 @@ function Projects() {
           technology={['React', 'Express', 'App Write']}
           title="Full-Stack Blog Platform (Appwrite, React, Express, User Auth, Image Uploads)"
           description="I built a full-stack blog platform where users can create, edit, and delete posts with rich text and images. It includes secure authentication, image uploads, and a modern responsive UI."
-          image="/blog.png"
+          image="/blog.webp"
           gitHubLink='https://www.github.com/TalhaRajput501/BlogWise'
           link="https://wiseblogs.vercel.app"
 
@@ -83,7 +83,7 @@ function Projects() {
           technology={['Pug', 'CSS', 'JavaScript', 'Node Js', 'Express', 'Mongodb', 'Email Js']}
           title="Full-Stack Agency Website (Pug Templates, Email Orders, MongoDB Feedback)"
           description="A learning project where users can place service orders through an email form and submit feedback stored in MongoDB. Includes dynamic pages built with Pug templates and a simple admin view for managing submissions."
-          image="/agency.png"
+          image="/agency.webp"
           gitHubLink='https://www.github.com/TalhaRajput501/ITHub'
           link="https://www.github.com/TalhaRajput501/ITHub"
 
@@ -99,7 +99,7 @@ function Projects() {
           technology={['HTML', 'CSS', 'JavaScript']}
           title="Weather Tracker"
           description="This was my very first project a simple weather tracker that fetches live data from an API. Even though the idea is basic, building it gave me the confidence that I can turn ideas into working apps and improve as I go. I also put effort into making the UI clean and visually pleasant."
-          image="/weather.png"
+          image="/weather.webp"
           gitHubLink='https://www.github.com/TalhaRajput501/check-weather'
           link="https://weather-of-town.vercel.app/"
 

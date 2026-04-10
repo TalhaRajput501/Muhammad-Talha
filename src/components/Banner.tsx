@@ -85,8 +85,10 @@ function Banner() {
       >
         <img
           className="rounded-4xl  object-cover  sm:w-[70%] w-full   "
-          src='./talha.png'
-          alt="muhammad talha" />
+          src='./talha.webp'
+          alt="muhammad talha" 
+          fetchPriority='high'
+          />
       </div>
     </div>
   )
