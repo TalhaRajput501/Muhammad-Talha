@@ -6,7 +6,7 @@ interface componentProps {
 function ReactLogo({className}: componentProps) {
   return (
      
-    <div className={`p-6 rounded-2xl w-42 h-42 flex flex-col items-center justify-center shadow-md  cursor-pointer bg-white border border-gray-200 hover:shadow-xl ${className}`}>
+    <div className={`rounded-2xl w-30 h-35    flex flex-col items-center justify-center shadow-md  cursor-pointer bg-white border border-gray-200 hover:shadow-xl ${className}`}>
 
       <div className="flex items-center justify-center  ">
         <svg
@@ -21,7 +21,7 @@ function ReactLogo({className}: componentProps) {
         </svg>
       </div>
 
-      <p className="mt-4 text-sm font-semibold text-center transition-colors duration-300 text-gray-800">
+      <p className="mt-1 text-sm font-semibold text-center transition-colors duration-300 text-gray-800">
         React
       </p>
     </div> 

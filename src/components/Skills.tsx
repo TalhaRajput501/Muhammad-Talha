@@ -9,9 +9,28 @@ import MongoDB from "./MongoDB"
 import CSS from './CSS'
 import HTML from './HTML'
 import Redux from "./Redux"
+import { NextJs } from "./NextJs"
+import { TypeScript } from "./TypeScript"
+import { Git } from "./Git"
 
 
 function Skills() {
+  const skills = [
+    ReactLogo,
+    NextJs,
+    NodeJs,
+    MongoDB,
+    Express,
+    JSLogo,
+    TypeScript,
+    Redux,
+    HTML,
+    CSS,
+    Tailwind,
+    GitHub,
+    Git
+
+  ]
   return (
     <div
       className='   mx-auto '
@@ -23,37 +42,17 @@ function Skills() {
       </h1>
 
       <div
-        className='sm:mx-9 flex my-5 items-center justify-center flex-wrap '
+        className='sm:mx-9 flex my-5 items-center justify-center flex-wrap'
       >
         {/* All Logos of Skills */}
 
-        <ReactLogo className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  "  />
+        {
+          skills.map((Skill, index) => {
+            return <Skill className="sm:mx-4 mx-1 my-4 sm:basis-[10%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300 " key={index} />
+          })
+        }
 
-        <NodeJs className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  " />
-
-        <MongoDB className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  " />
-
-        <Express className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  " />
-
-        <Redux className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  " />
-
-        <HTML className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  " />
-
-        <CSS className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  " />
-
-        <Tailwind className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  " />
-
-        <JSLogo className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  " />
-
-        <GitHub className=" sm:mx-4 mx-1  my-4 sm:basis-[15%] basis-[40%] flex-grow-0 flex-shrink-0 hover:-translate-y-4 duration-300  " />
-
-
-      </div>
-
- 
-
-
-
+      </div> 
 
     </div>
   )

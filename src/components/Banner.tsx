@@ -36,11 +36,11 @@ function Banner() {
 
   return (
     <div
-      className=" mt-9  w-[95vw] flex justify-between sm:flex-row flex-col mx-auto items-center  "
+      className=" mt-9  w-[80%]   flex justify-between sm:flex-row flex-col mx-auto items-center  "
     >
       {/* Introduction Paragraph */}
       <div
-        className="smL:ml-12 w-full sm:w-[50%] mb-8"
+        className="smL:ml-12 w-full sm:w-[50%] mb-8  "
       >
         <h1
           className='font-bold dark:text-[#e09f3e] sm:hidden text-center text-[#cb997e] mb-3 text-3xl font-archivo-black'
@@ -52,7 +52,7 @@ function Banner() {
         <h1
           className="text-2xl font-bold text-gray-700  dark:text-gray-200"
         >Hi, I’m
-          <span className='font-bold text-4xl font-akaya-kanadaka dark:text-[#e09f3e] text-[#cb997e] ' > Talha Rajput 👋</span>
+          <span className='font-bold text-4xl font-akaya-kanadaka dark:text-[#e09f3e] text-[#cb997e] ' > Talha </span>
         </h1>
 
         <h1
@@ -81,7 +81,7 @@ function Banner() {
 
       {/* MY picture */}
       <div
-        className="sm:w-[50%] w-full flex  justify-center   "
+        className="sm:w-[50%] w-full flex  justify-end    "
       >
         <img
           className="rounded-4xl  object-cover  sm:w-[70%] w-full   "

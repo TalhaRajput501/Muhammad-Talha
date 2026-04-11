@@ -9,7 +9,7 @@ function Toggle() {
   const [mode, setMode] = useState(localStorage.getItem('mode') || import.meta.env.VITE_THEME_MODE || 'dark')
 
   useEffect(() => {
-    console.log('theme', mode)
+    // console.log('theme', mode)
     if (mode === 'dark') {
       document.querySelector('html')?.classList.add('dark')
       localStorage.setItem('mode', 'dark')
@@ -40,7 +40,7 @@ function Toggle() {
         >
           {mode === 'dark' ? (
             <Sun className="h-5 w-5 text-yellow-500" />
-          ) : ( // i use this logic just because if i use moon above my code will break in   production 
+          ) : (   
             <Moon className="h-5 w-5 text-blue-400" />
           )}
         </span>

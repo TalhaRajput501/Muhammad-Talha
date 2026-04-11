@@ -25,13 +25,13 @@ function ProjectCard({ title, description, image, link, gitHubLink, technology, 
         className=" text-3xl mx-1 text-center text-[#85856c] dark:text-[#e09f3e] mt-4  font-poppins   "
       >{mainTitle}</h1>
 
-      <div className={` bg-[#b7b7a4ce] dark:bg-gray-800 rounded sm:rounded-xl shadow-xl border  hover:shadow-2xl transition-shadow duration-300 mb-5  ${className}  `}>
+      <div className={`bg-[#b7b7a4ce] dark:bg-gray-800 rounded sm:rounded-xl shadow-xl border hover:shadow-2xl transition-shadow duration-300 mb-5 md:max-lg:gap-3 ${className}`}>
 
 
         {/* Project Information  */}
-        <div className={`p-5 sm:w-[50%]   ${infoClassName} `}>
+        <div className={`p-5 sm:w-[50%] md:max-lg:w-[58%] md:max-lg:p-4 ${infoClassName}`}>
 
-          <h2 className="sm:text-2xl text-xl font-extrabold sm:font-bold mb-2 text-[#4361ee] text-center sm:text-left  dark:text-[#4361ee]">{title}</h2>
+          <h2 className="sm:text-2xl text-xl md:max-lg:text-xl font-extrabold sm:font-bold mb-2 text-[#4361ee] text-center sm:text-left dark:text-[#4361ee]">{title}</h2>
           <p className="text-gray-800 text-justify sm:text-left dark:text-gray-200 mb-4 font-semibold ">{description}</p>
 
           <h1
@@ -58,7 +58,7 @@ function ProjectCard({ title, description, image, link, gitHubLink, technology, 
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-4 py-2 font-medium bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors duration-300  mt-2 sm:mt-0 w-full mx-auto  sm:w-auto justify-center   "
+            className="inline-flex items-center px-4 py-2 font-medium bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors duration-300 mt-2 sm:mt-0 w-full mx-auto sm:w-auto md:max-lg:w-full justify-center"
           >
             View Project
             {/* new tab icon */}
@@ -72,7 +72,7 @@ function ProjectCard({ title, description, image, link, gitHubLink, technology, 
             target="_blank"
             rel="noopener noreferrer"
             tabIndex={0}
-            className="inline-flex  items-center gap-2 px-4 py-2 rounded md:mx-2 font-medium  justify-center transition-colors duration-200 bg-gray-700 text-white sm:w-auto   hover:bg-gray-600 mt-2 md:mt-0 w-full    "
+            className="inline-flex items-center gap-2 px-4 py-2 rounded lg:mx-2 font-medium justify-center transition-colors duration-200 bg-gray-700 text-white sm:w-auto hover:bg-gray-600 mt-2 lg:mt-0 w-full md:max-lg:w-full"
           >
             {/* github icon */}
             <svg
@@ -91,9 +91,9 @@ function ProjectCard({ title, description, image, link, gitHubLink, technology, 
 
         {/* Project Picture  */}
         <div
-          className={`sm:w-[50%] flex items-center justify-center  ${picClassName}`}
+          className={`sm:w-[50%] md:max-lg:w-[42%] md:max-lg:px-2 flex items-center justify-center ${picClassName}`}
         >
-          <img className=" sm:w-[90%]  h-auto rounded sm:rounded-lg  sm:border sm:dark:border-none  " src={image} alt={title} />
+          <img className="sm:w-[90%] md:max-lg:w-full h-auto rounded sm:rounded-lg sm:border sm:dark:border-none" src={image} alt={title} />
         </div>
 
       </div>

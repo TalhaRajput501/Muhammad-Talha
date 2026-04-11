@@ -9,7 +9,7 @@ function App() {
     <>
       <div
         // className='bg-[#efe1bd] dark:bg-gray-900 dark:text-white text-gray-900 min-h-screen'
-        className='bg-[#f0efeb] dark:bg-gray-900 dark:text-white text-gray-900 min-h-screen'
+        className='bg-[#f0efeb] dark:bg-gray-900 dark:text-white text-gray-900 min-h-screen max-w-[1400px] mx-auto' 
       >
         {/* Navigation bar */}
         <Navbar />
