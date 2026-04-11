@@ -52,7 +52,7 @@ function Contact() {
             <div className="space-y-3">
               <a
                 href="mailto:muhammadtalha.dev4197@gmail.com"
-                className="group flex items-center gap-3 rounded-xl border border-transparent bg-white/60 px-4 py-3 text-gray-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#4361ee]/30 hover:bg-white dark:bg-gray-900/35 dark:text-gray-200 dark:hover:border-[#e09f3e]/40"
+                className="group flex items-center gap-3 rounded-xl border border-transparent bg-white/60 px-4 py-3 text-gray-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#4361ee]/30 hover:bg-white dark:bg-gray-900/35 dark:text-gray-200 dark:hover:border-[#e09f3e]/50 dark:hover:bg-[#3a3328] dark:hover:text-[#fff6e8]"
               >
                 <Mail className="h-5 w-5 text-[#4361ee] dark:text-[#e09f3e]" />
                 <span className="break-all font-semibold text-sm sm:text-base">
@@ -62,7 +62,7 @@ function Contact() {
 
               <a
                 href="tel:+923191748730"
-                className="group flex items-center gap-3 rounded-xl border border-transparent bg-white/60 px-4 py-3 text-gray-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#4361ee]/30 hover:bg-white dark:bg-gray-900/35 dark:text-gray-200 dark:hover:border-[#e09f3e]/40"
+                className="group flex items-center gap-3 rounded-xl border border-transparent bg-white/60 px-4 py-3 text-gray-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#4361ee]/30 hover:bg-white dark:bg-gray-900/35 dark:text-gray-200 dark:hover:border-[#e09f3e]/50 dark:hover:bg-[#3a3328] dark:hover:text-[#fff6e8]"
               >
                 <Phone className="h-5 w-5 text-[#4361ee] dark:text-[#e09f3e]" />
                 <span className="font-semibold text-sm sm:text-base">+92 319 1748730</span>
@@ -72,7 +72,7 @@ function Contact() {
                 href="https://github.com/TalhaRajput501"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 rounded-xl border border-transparent bg-white/60 px-4 py-3 text-gray-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#4361ee]/30 hover:bg-white dark:bg-gray-900/35 dark:text-gray-200 dark:hover:border-[#e09f3e]/40"
+                className="group flex items-center gap-3 rounded-xl border border-transparent bg-white/60 px-4 py-3 text-gray-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#4361ee]/30 hover:bg-white dark:bg-gray-900/35 dark:text-gray-200 dark:hover:border-[#e09f3e]/50 dark:hover:bg-[#3a3328] dark:hover:text-[#fff6e8]"
               >
                 <Github className="h-5 w-5 text-[#4361ee] dark:text-[#e09f3e]" />
                 <span className="break-all font-semibold text-sm sm:text-base">
@@ -84,7 +84,7 @@ function Contact() {
                 href="https://www.linkedin.com/in/m-talha-dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 rounded-xl border border-transparent bg-white/60 px-4 py-3 text-gray-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#4361ee]/30 hover:bg-white dark:bg-gray-900/35 dark:text-gray-200 dark:hover:border-[#e09f3e]/40"
+                className="group flex items-center gap-3 rounded-xl border border-transparent bg-white/60 px-4 py-3 text-gray-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#4361ee]/30 hover:bg-white dark:bg-gray-900/35 dark:text-gray-200 dark:hover:border-[#e09f3e]/50 dark:hover:bg-[#3a3328] dark:hover:text-[#fff6e8]"
               >
                 <Linkedin className="h-5 w-5 text-[#4361ee] dark:text-[#e09f3e]" />
                 <span className="font-semibold text-sm sm:text-base">
