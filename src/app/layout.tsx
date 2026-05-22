@@ -25,7 +25,7 @@ const archivoBlack = Archivo_Black({
 
 export const metadata: Metadata = {
   title: "Muhammad Talha | MERN & Next.js Developer",
-  description: "Professional portfolio of Muhammad Talha, a Full-Stack Developer specializing in high-performance React, Next.js, Node.js, and TypeScript applications.",
+  description: "Explore the full-stack engineering portfolio of Muhammad Talha, specializing in production-ready React, Next.js, and Node.js applications.",
   
   // 1. Core indexing configurations
   metadataBase: new URL("https://talhadevco.vercel.app"),
@@ -47,12 +47,12 @@ export const metadata: Metadata = {
   // 3. Open Graph (For LinkedIn, Discord, Facebook previews)
   openGraph: {
     title: "Muhammad Talha | MERN & Next.js Developer",
-    description: "Explore production-grade full-stack projects, including custom POS systems and optimized e-commerce platforms built with Next.js.",
+   description: "Explore the engineering portfolio of Muhammad Talha, a Full-Stack Web Developer specializing in production-grade React, Next.js, and Node.js applications. From complex MERN stack architectures to performance-optimized web systems, discover scalable software solutions built for the modern web.",
     url: "https://talhadevco.vercel.app",
     siteName: "TalhaDev Portfolio",
     images: [
       {
-        url: "/talha-og.webp", // Add a nice screenshot image named 'talha-og.webp' inside your public folder
+        url: "/talha-og.png", // Add a nice screenshot image named 'talha-og.png' inside your public folder
         width: 1200,
         height: 630,
         alt: "Muhammad Talha Developer Portfolio Preview",
@@ -66,8 +66,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Muhammad Talha | MERN & Next.js Developer",
-    description: "Full-Stack Web Developer specializing in React, Next.js, and Node.js.",
-    images: ["/talha-og.webp"],
+    description: "Full-Stack Engineer specializing in high-performance React, Next.js, and MERN applications. Building production-grade web systems with clean architecture.",
+    images: ["/talha-og.png"],
   },
 };
 
