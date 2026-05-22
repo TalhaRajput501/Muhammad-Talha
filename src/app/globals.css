@@ -5,28 +5,27 @@ html {
 }
 
 .font-poppins {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 600;
   font-style: italic;
 
 }
 
 .font-permanent-marker {
-  font-family: "Permanent Marker", cursive;
+  font-family: var(--font-permanent-marker), cursive;
   font-weight: 400;
   font-style: normal;
 }
 
 .font-akaya-kanadaka {
-  font-family: "Akaya Kanadaka", system-ui;
+  font-family: var(--font-akaya-kanadaka), system-ui;
   font-weight: 800;
   font-style: normal;
 }
 
 .font-archivo-black {
-  font-family: "Archivo Black", sans-serif;
+  font-family: var(--font-archivo-black), sans-serif;
   font-weight: 600;
   font-style: normal;
 }
-
 

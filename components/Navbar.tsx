@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <nav
-      className="  dark:bg-gray-800   bg-[#b7b7a4] h-15 flex justify-between items-center"
+      className="dark:bg-gray-800 bg-[#b7b7a4] h-[3.75rem] flex justify-between items-center"
     >
       {/* Logo */}
       <a href="#">
@@ -46,7 +46,7 @@ function Navbar() {
         </li>
 
         <ul
-          className={`sm:w-full  sm:flex sm:relative sm:right-0 sm:items-center  sm:h-15 sm:justify-center fixed top-0 mr-0  w-[60%] overflow-y-hidden  transform transition-all duration-200 ease-in-out  h-screen  ${menu ? '  right-0 z-50 dark:bg-gray-800  bg-[#b7b7a4] pt-10 ' : '-right-[60%]  '}     `}
+          className={`sm:w-full sm:flex sm:relative sm:right-0 sm:items-center sm:h-[3.75rem] sm:justify-center fixed top-0 mr-0 w-[60%] overflow-y-hidden transform transition-all duration-200 ease-in-out h-screen ${menu ? 'right-0 z-50 dark:bg-gray-800 bg-[#b7b7a4] pt-10' : '-right-[60%]'}     `}
         >
 
           {/* <li

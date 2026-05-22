@@ -6,7 +6,12 @@ import { Moon, Sun } from "lucide-react"; // lightweight icons
 function Toggle() {
 
   // const [darkMode, setDarkMode] = useState<boolean>(false)
-  const [mode, setMode] = useState(localStorage.getItem('mode') || import.meta.env.VITE_THEME_MODE || 'dark')
+  const [mode, setMode] = useState('light')
+
+  useEffect(() => {
+    const savedMode = localStorage.getItem('mode') || 'light'
+    setMode(savedMode)
+  }, [])
 
   useEffect(() => {
     // console.log('theme', mode)

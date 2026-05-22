@@ -1,6 +1,9 @@
 
-import { Navbar, Banner, Skills, Projects } from './components'
-import Contact from './components/Contact'
+// import { Navbar, Banner, Skills, Projects } from './components'
+// import Contact from './components/Contact'
+'use client'; 
+import { Navbar, Banner, Skills, Projects } from '../../components'
+import Contact from '../../components/Contact'
 
 
 function App() {

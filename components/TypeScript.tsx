@@ -4,7 +4,7 @@ interface componentProp {
 export const TypeScript = ({ className }: componentProp) => {
       return (
 
-      <div className={`rounded-2xl w-30 h-35    flex flex-col items-center justify-center shadow-md  cursor-pointer bg-white border border-gray-200 hover:shadow-xl ${className}`}>
+      <div className={`rounded-2xl w-[7.5rem] h-[8.75rem] flex flex-col items-center justify-center shadow-md cursor-pointer bg-white border border-gray-200 hover:shadow-xl ${className}`}>
 
 
         <div className="flex items-center justify-center scale-[1.00311]">
@@ -16,7 +16,7 @@ export const TypeScript = ({ className }: componentProp) => {
             strokeWidth="0"
             role="img"
             viewBox="0 0 33 33"
-            className="w-19 h-19 text-[#3178c6]"
+            className="w-[4.75rem] h-[4.75rem] text-[#3178c6]"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect x="2" y="2" width="28" height="28" rx="1.312" style={{ fill: "#3178c6" }}/>

@@ -4,13 +4,13 @@ interface componentProp {
 function CSS({ className}: componentProp ) {
   return (
 
-    <div className={`rounded-2xl w-30 h-35    flex flex-col items-center justify-center shadow-md  cursor-pointer bg-white border border-gray-200 hover:shadow-xl ${className}`}>
+    <div className={`rounded-2xl w-[7.5rem] h-[8.75rem] flex flex-col items-center justify-center shadow-md cursor-pointer bg-white border border-gray-200 hover:shadow-xl ${className}`}>
 
         <div className="flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 384 512"
-            className="w-19 h-19 text-[#1572B6]"
+            className="w-[4.75rem] h-[4.75rem] text-[#1572B6]"
             fill="currentColor"
             stroke="currentColor"
             strokeWidth="0"
