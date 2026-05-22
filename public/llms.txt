@@ -1,0 +1,31 @@
+# Muhammad Talha — MERN Stack Developer
+I turn ideas into full-stack web apps with a focus on clean UX and reliability.
+I build modern, scalable, and user‑friendly solutions with the MERN stack.
+
+## Core Technical Stack
+- Frontend: React, Next.js (App Router), TypeScript, Redux Toolkit, Tailwind CSS
+- Backend: Node.js, Express, MongoDB, JWT, Bcrypt, REST APIs
+
+## What I Deliver
+- Full-stack web applications with responsive, accessible interfaces.
+- Secure authentication flows and role-based access control.
+- Scalable data models and admin dashboards for operations and reporting.
+- Deployment-ready builds with performance-conscious frontends.
+
+## Project Highlights
+- **Inventory Management System with POS:** MERN app with user roles, inventory tracking, automated billing, and an admin dashboard for sales and stock insights.
+- **Complete Me (Next.js E‑commerce):** Product listings, user accounts, orders, and a lightweight admin panel built with Next.js App Router, TypeScript, and MongoDB.
+- **BlogWise Platform:** Full-stack blog with authentication, rich‑text posts, image uploads, and a modern responsive UI using React, Express, and Appwrite.
+- **IT Hub Agency Site:** Pug‑based dynamic pages with email service requests and MongoDB‑backed feedback management.
+
+## Focus Areas
+- MERN stack architecture and API design.
+- Frontend engineering with Tailwind CSS and component-driven UI.
+- State management with Redux Toolkit and client-side data flows.
+- Authentication with JWT and password hashing with Bcrypt.
+
+## Contact
+Email: muhammadtalha.dev4197@gmail.com
+GitHub: https://github.com/TalhaRajput501
+LinkedIn: https://www.linkedin.com/in/m-talha-dev/
+Phone: +92 3191748730

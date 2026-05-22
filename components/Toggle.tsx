@@ -4,23 +4,29 @@ import { Moon, Sun } from "lucide-react"; // lightweight icons
 
 
 function Toggle() {
-
-  // const [darkMode, setDarkMode] = useState<boolean>(false)
-  const [mode, setMode] = useState('light')
-
-  useEffect(() => {
-    const savedMode = localStorage.getItem('mode') || 'light'
-    setMode(savedMode)
-  }, [])
+  type ThemeMode = 'dark' | 'light'
+  const getDefaultMode = (): ThemeMode => {
+    const envMode = process.env.NEXT_PUBLIC_THEME_MODE
+    return envMode === 'light' || envMode === 'dark' ? envMode : 'dark'
+  }
+  const getStoredMode = (): ThemeMode | null => {
+    if (typeof window === 'undefined') {
+      return null
+    }
+    const storedMode = window.localStorage.getItem('mode')
+    return storedMode === 'light' || storedMode === 'dark' ? storedMode : null
+  }
+  const [mode, setMode] = useState<ThemeMode>(() => getStoredMode() ?? getDefaultMode())
 
   useEffect(() => {
     // console.log('theme', mode)
+    const root = document.documentElement
     if (mode === 'dark') {
-      document.querySelector('html')?.classList.add('dark')
-      localStorage.setItem('mode', 'dark')
+      root.classList.add('dark')
+      window.localStorage.setItem('mode', 'dark')
     } else {
-      document.querySelector('html')?.classList.remove('dark')
-      localStorage.setItem('mode', 'light')
+      root.classList.remove('dark')
+      window.localStorage.setItem('mode', 'light')
 
     }
   }, [mode])
@@ -36,7 +42,7 @@ function Toggle() {
     <div>
       <button
         onClick={() => setMode((mode: string) => mode === 'dark' ? 'light' : 'dark')}
-        className="relative  cursor-pointer flex h-9 w-17 items-center rounded-full bg-gray-300 dark:bg-gray-700 p-1 transition-colors duration-300 mr-4  "
+        className="relative cursor-pointer flex h-9 w-[4.25rem] items-center rounded-full bg-gray-300 dark:bg-gray-700 p-1 transition-colors duration-300 mr-4"
       >
         {/* Circle that slides */}
         <span
