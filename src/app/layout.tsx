@@ -23,6 +23,7 @@ const archivoBlack = Archivo_Black({
   variable: "--font-archivo-black",
 })
 
+// todo: Get the pictures generate by gemeni and use it before the deployment.
 export const metadata: Metadata = {
   title: "Muhammad Talha | MERN & Next.js Developer",
   description: "Explore the full-stack engineering portfolio of Muhammad Talha, specializing in production-ready React, Next.js, and Node.js applications.",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "TalhaDev Portfolio",
     images: [
       {
-        url: "/talha-og.png", // Add a nice screenshot image named 'talha-og.png' inside your public folder
+        url: "/talha-og.webp", // Add a nice screenshot image named 'talha-og.webp' inside your public folder
         width: 1200,
         height: 630,
         alt: "Muhammad Talha Developer Portfolio Preview",
@@ -67,7 +68,17 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Muhammad Talha | MERN & Next.js Developer",
     description: "Full-Stack Engineer specializing in high-performance React, Next.js, and MERN applications. Building production-grade web systems with clean architecture.",
-    images: ["/talha-og.png"],
+    images: ["/talha-og.webp"],
+  },
+
+  // Favicon and icons (Optional, but good for branding)
+  icons: {
+    icon: "/talha.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32" },
+      { rel: "icon", url: "/favicon-16x16.png", sizes: "16x16" },
+    ],
   },
 };
 
