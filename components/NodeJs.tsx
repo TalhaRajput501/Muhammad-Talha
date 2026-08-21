@@ -5,7 +5,7 @@ interface componentProp {
 function NodeJs({className}: componentProp) {
   return (
  
-    <div className={`rounded-2xl w-[7.5rem] h-[8.75rem] flex flex-col items-center justify-center shadow-md cursor-pointer bg-white border border-gray-200 hover:shadow-xl ${className}`}>
+    <div className={`  ${className}`}>
 
 
         <div className="flex items-center justify-center">
@@ -21,10 +21,7 @@ function NodeJs({className}: componentProp) {
           </svg>
         </div>
 
-
-        <p className="mt-1 text-sm  font-semibold text-center transition-colors duration-300 text-gray-800">
-          Node Js
-        </p>
+ 
       </div>
   )
 }

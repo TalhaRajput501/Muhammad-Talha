@@ -1,31 +1,93 @@
 @import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
+
 html {
   scroll-behavior: smooth;
 }
 
-.font-poppins {
-  font-family: var(--font-poppins), sans-serif;
-  font-weight: 600;
-  font-style: italic;
+:root {
+  /* =========================
+     Backgrounds
+     ========================= */
+  --background: #070b18;
+  --background-secondary: #0b1020;
+  --surface: #111827;
+  --surface-hover: #151e32;
 
+  /* =========================
+     Borders
+     ========================= */
+  --border: #202a40;
+  --border-hover: #343f5c;
+
+  /* =========================
+     Text
+     ========================= */
+  --foreground: #f8fafc;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  /* =========================
+     Brand / Accent
+     ========================= */
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --primary-light: #a78bfa;
+
+  /* =========================
+     Secondary Accent
+     ========================= */
+  --secondary: #3b82f6;
+  --secondary-light: #60a5fa;
+
+  /* =========================
+     Status / Supporting Colors
+     ========================= */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* =========================
+     Gradients
+     ========================= */
+  --gradient-primary: linear-gradient(135deg,
+      #8b5cf6 0%,
+      #6366f1 50%,
+      #3b82f6 100%);
+
+  --gradient-background: linear-gradient(135deg,
+      #070b18 0%,
+      #0b1020 50%,
+      #0d1024 100%);
 }
 
-.font-permanent-marker {
-  font-family: var(--font-permanent-marker), cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.font-akaya-kanadaka {
-  font-family: var(--font-akaya-kanadaka), system-ui;
-  font-weight: 800;
-  font-style: normal;
-}
 
-.font-archivo-black {
-  font-family: var(--font-archivo-black), sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
 
+/* Tailwind v4 theme */
+@theme {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+
+  --color-foreground: var(--foreground);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+}

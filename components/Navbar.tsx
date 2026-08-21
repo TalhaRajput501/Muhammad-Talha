@@ -1,86 +1,85 @@
-import { useState } from "react"
-import Toggle from "./Toggle"
+'use client'
+import { useState } from 'react';
+import { Github, Linkedin, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-function Navbar() {
 
-  const [menu, setMenu] = useState<boolean>(false)
-  const handleMenu = () => {
+export default function Navbar() {
+  const [currentHash, setcurrentHash] = useState('')
 
-    setMenu(prev => !prev)
-
-  }
+  const homeUrl = process.env.NEXT_PUBLIC_SITE_URL || '';
+  const navItems = [
+    { name: 'Home', href: homeUrl, active: currentHash === homeUrl || currentHash === '' },
+    { name: 'About', href: '/#about', active: currentHash === '/#about' },
+    { name: 'Skills', href: '/#skills', active: currentHash === '/#skills' },
+    { name: 'Projects', href: '/#projects', active: currentHash === '/#projects' },
+    { name: 'Contact', href: '/#contact', active: currentHash === '/#contact' },
+  ];
 
   return (
-    <nav
-      className="dark:bg-gray-800 bg-[#b7b7a4] h-[3.75rem] flex justify-between items-center"
-    >
-      {/* Logo */}
-      <a href="#">
-        <div
-          className="ml-8"
-        >
-          <img className="h-12 w-14 rounded-full" src="/ironman1.webp" alt="HeaderIcon" />
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/70 backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+
+        {/* Brand / Logo */}
+        <Link onClick={() => setcurrentHash(homeUrl)} href={homeUrl} className="flex items-center gap-3 group">
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-purple-500/80 bg-purple-950/40 text-lg font-bold text-purple-300 shadow-[0_0_12px_rgba(168,85,247,0.3)] transition-all group-hover:border-purple-400 group-hover:shadow-[0_0_18px_rgba(168,85,247,0.5)] hidden sm:flex">
+            T
+          </div>
+          <span className="text-xl font-bold tracking-tight text-white">
+            Talha
+          </span>
+          {/* <Image src="/logo2.png" alt="Logo" width={66} height={36} /> */}
+        </Link>
+
+        {/* Center Navigation Links */}
+        <nav className="hidden md:flex items-center gap-2">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              onClick={() => setcurrentHash(item.href)}
+              href={item.href}
+              className={`px-4 py-1.5 text-sm font-medium transition-all duration-200 rounded-xl ${item.active
+                ? 'bg-purple-600/30 text-white border border-purple-500/40 shadow-[0_0_15px_rgba(147,51,234,0.35)]'
+                : 'text-gray-300 hover:text-white hover:bg-white/5 border border-transparent  '
+                }`}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Right Section: Socials & CTA */}
+        <div className="flex items-center gap-5">
+          <Link
+            href="https://github.com/TalhaRajput501"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+            className="text-gray-300 hover:text-white transition-colors"
+          >
+            <Github className="h-5 w-5" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/m-talha-dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+            className="text-gray-300 hover:text-white transition-colors"
+          >
+            <Linkedin className="h-5 w-5" />
+          </Link>
+
+
+
+          <Link className="group flex items-center gap-2 rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-white  transition-all hover:bg-primary-hover " href="/#contact">
+            Let's Connect
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+
         </div>
-      </a>
-
-      {/* Nav items */}
-      <div
-        className="  flex items-center  "
-      >
-
-        {/* Dark mode toggle   */}
-        <Toggle />
-
-
-        <li
-          className={`dark:text-slate-50 text-2xl list-none  sm:hidden   ease-in-out z-51  text-gray-900 mx-2 font-semibold rounded border border-white py-1 text-center cursor-pointer ${menu ? ' fixed right-0.5' : ' '} `}
-          onClick={handleMenu}
-        >
-          {
-            menu ? (
-              <a className="px-3  ">X</a>
-            ) : (
-              <a className="px-2.5 ">☰</a>
-            )
-          }
-        </li>
-
-        <ul
-          className={`sm:w-full sm:flex sm:relative sm:right-0 sm:items-center sm:h-[3.75rem] sm:justify-center fixed top-0 mr-0 w-[60%] overflow-y-hidden transform transition-all duration-200 ease-in-out h-screen ${menu ? 'right-0 z-50 dark:bg-gray-800 bg-[#b7b7a4] pt-10' : '-right-[60%]'}     `}
-        >
-
-          {/* <li
-            className="dark:text-slate-50 text-3xl list-none translate-x-full sm:my-auto mt-4 sm:w-auto mx-auto w-[20%] sm:hidden cursor-pointer text-gray-900 sm:mx-2 font-semibold rounded border border-white sm:py-1 text-center"
-            onClick={handleMenu}
-          >
-            <a className="sm:px-3   ">X</a>
-          </li> */}
-
-          <li
-            className="dark:text-slate-50  text-gray-900 sm:mx-2  sm:my-auto mt-9 w-[80%]  sm:w-auto mx-auto    font-semibold rounded border border-white  text-center dark:hover:text-[#e09f3e] dark:hover:border-[#e09f3e] duration-100 hover:text-white hover:border-[#cb997e] "
-          >
-            <a href='/Talha.pdf' download='Talha_MERN_CV.pdf' className="sm:px-3 block w-full mx-auto  py-3 sm:py-2">Download CV </a>
-          </li>
-
-          <li
-            className="dark:text-slate-50  text-gray-900 sm:mx-2  sm:my-auto mt-9 w-[80%]  sm:w-auto mx-auto    font-semibold rounded border border-white  text-center dark:hover:text-[#e09f3e] dark:hover:border-[#e09f3e] duration-100 hover:text-white hover:border-[#cb997e] "
-          >
-            <a href="#projects" className="sm:px-3 block w-full mx-auto  py-3 sm:py-2">Projects </a>
-          </li>
-
-          <li
-            className="dark:text-slate-50  text-gray-900 sm:mx-2  sm:my-auto mt-9 w-[80%]  sm:w-auto mx-auto    font-semibold rounded border border-white  text-center dark:hover:text-[#e09f3e] dark:hover:border-[#e09f3e] duration-100 hover:text-white hover:border-[#cb997e] "
-          >
-            <a href="#contact" className="sm:px-3 block w-full mx-auto  py-3 sm:py-2">Hire Me </a>
-          </li>
-
-        </ul>
-
-
 
       </div>
-    </nav>
-  )
+    </header >
+  );
 }
-
-export default Navbar

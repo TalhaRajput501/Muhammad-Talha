@@ -1,6 +1,7 @@
 import "./globals.css"
 import type { Metadata, Viewport } from "next"
 import { Akaya_Kanadaka, Archivo_Black, Permanent_Marker, Poppins } from "next/font/google"
+import { Navbar } from "../../components"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,7 +28,7 @@ const archivoBlack = Archivo_Black({
 export const metadata: Metadata = {
   title: "Muhammad Talha | MERN & Next.js Developer",
   description: "Explore the full-stack engineering portfolio of Muhammad Talha, specializing in production-ready React, Next.js, and Node.js applications.",
-  
+
   // 1. Core indexing configurations
   metadataBase: new URL("https://talhadevco.vercel.app"),
   alternates: {
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
   // 3. Open Graph (For LinkedIn, Discord, Facebook previews)
   openGraph: {
     title: "Muhammad Talha | MERN & Next.js Developer",
-   description: "Explore the engineering portfolio of Muhammad Talha, a Full-Stack Web Developer specializing in production-grade React, Next.js, and Node.js applications. From complex MERN stack architectures to performance-optimized web systems, discover scalable software solutions built for the modern web.",
+    description: "Explore the engineering portfolio of Muhammad Talha, a Full-Stack Web Developer specializing in production-grade React, Next.js, and Node.js applications. From complex MERN stack architectures to performance-optimized web systems, discover scalable software solutions built for the modern web.",
     url: "https://talhadevco.vercel.app",
     siteName: "TalhaDev Portfolio",
     images: [
@@ -97,7 +98,10 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${permanentMarker.variable} ${akayaKanadaka.variable} ${archivoBlack.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-screen max-w-[1400px] mx-auto bg-background">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filter for Accents -->
+    <filter id="purpleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Tech Grid Pattern (Square Boxes Mesh) -->
+    <pattern id="techGrid" width="35" height="35" patternUnits="userSpaceOnUse">
+      <path d="M 35 0 L 0 0 0 35" fill="none" stroke="#7c3aed" stroke-width="0.75" stroke-opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Tech Mesh Grid Layer -->
+  <rect width="500" height="500" fill="url(#techGrid)" opacity="0.7"/>
+
+  <!-- Central Tech Ring / Radar System -->
+  <g transform="translate(250, 250)">
+    <!-- Outer Faint Dashed Ring -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="4 8" stroke-opacity="0.3"/>
+    
+    <!-- Main Solid Accent Arc -->
+    <circle cx="0" cy="0" r="155" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="240 90" stroke-dashoffset="40"/>
+    
+    <!-- Inner Target Ring -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#c084fc" stroke-width="0.75" stroke-opacity="0.25"/>
+
+    <!-- Crosshairs / Tech Axis Markers -->
+    <path d="M -190 0 L -165 0 M 165 0 L 190 0 M 0 -190 L 0 -165" stroke="#a855f7" stroke-width="1" stroke-opacity="0.4"/>
+    
+    <!-- HUD Connecting Lines & Nodes -->
+    <path d="M -150 50 L -100 50 L -70 90 L -130 90" fill="none" stroke="#a855f7" stroke-width="1" stroke-opacity="0.35"/>
+    
+    <!-- Glowing Data Points -->
+    <circle cx="-150" cy="50" r="4" fill="#d8b4fe" filter="url(#purpleGlow)"/>
+    <circle cx="110" cy="-110" r="3.5" fill="#c084fc" filter="url(#purpleGlow)"/>
+    <circle cx="135" cy="80" r="4.5" fill="#a855f7" filter="url(#purpleGlow)"/>
+    <circle cx="-45" cy="-145" r="3.5" fill="#e9d5ff" filter="url(#purpleGlow)"/>
+  </g>
+</svg>
