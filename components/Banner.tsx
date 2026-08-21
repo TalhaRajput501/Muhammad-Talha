@@ -27,7 +27,7 @@ function Banner() {
             Full-stack developer specializing in MERN stack and modern technologies. I build scalable, user-friendly solutions that deliver real value.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 w-full justify-center">
+          <div className="flex flex-wrap items-center gap-4 w-full justify-center sm:justify-start">
             <Button
               link="/all-projects"
               fill={true}

@@ -5,7 +5,7 @@ export default function Button({ children, link, fill = true, ...props }: { chil
   return (
     <Link
       href={link}
-      className={`${fill ? 'inline-flex  w-full items-center justify-center  gap-2 px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-hover transition-colors' : 'w-full justify-center inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-medium rounded-lg hover:bg-surface-hover transition-colors'}`}
+      className={`${fill ? 'inline-flex   gap-2 px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-hover transition-colors' : 'inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-medium rounded-lg hover:bg-surface-hover transition-colors'} items-center w-full justify-center sm:w-fit`}
       {...props}
     >
       {children}
