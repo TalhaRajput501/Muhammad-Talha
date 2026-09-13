@@ -1,31 +1,27 @@
-# Muhammad Talha — MERN Stack Developer
-I turn ideas into full-stack web apps with a focus on clean UX and reliability.
-I build modern, scalable, and user‑friendly solutions with the MERN stack.
+# Muhammad Talha — Full-Stack Developer (Next.js, Node.js) & AI SaaS Builder
+
+## Profile Summary
+Muhammad Talha is a full-stack software engineer specializing in Next.js, Node.js, and applied AI integrations. He builds production-ready SaaS platforms, e-commerce applications, and multi-tenant inventory management systems. 
 
 ## Core Technical Stack
-- Frontend: React, Next.js (App Router), TypeScript, Redux Toolkit, Tailwind CSS
-- Backend: Node.js, Express, MongoDB, JWT, Bcrypt, REST APIs
+- Frontend: React, Next.js (App Router), TypeScript, Tailwind CSS, Redux Toolkit
+- Backend: Node.js, Express.js, NestJS, REST APIs
+- Database & Auth: MongoDB, NextAuth, Appwrite, JWT, Bcrypt
+- Applied AI & Infrastructure: Mistral API, LLM structured output parsing, Docker, GitHub Actions, Vercel, Microsoft Azure
 
-## What I Deliver
-- Full-stack web applications with responsive, accessible interfaces.
-- Secure authentication flows and role-based access control.
-- Scalable data models and admin dashboards for operations and reporting.
-- Deployment-ready builds with performance-conscious frontends.
+## Experience & Key Projects
+- HandoutAI (AI-Powered EdTech SaaS): Built a production application converting uploaded study materials (PDF/DOCX/TXT) into interactive MCQ quizzes. Engineered the LLM integration using the Mistral API, implementing automated structural retries, token length estimation, and a credit-deduction billing system.
+- Freelance Full-Stack Developer: Developed frontend features and backend logic for US e-commerce and Australian marketplace platforms using React.js, Next.js, and NestJS.
+- completeMe (E-Commerce Platform): Developed a Next.js and TypeScript storefront featuring complete cart management, order tracking, and Stripe API integration for secure payment processing.
+- Inventory & POS System: Built a multi-tenant Node.js/React platform featuring real-time stock tracking, role-based access control (RBAC), and transactional Point-of-Sale checkout logic.
+- BlogWise: Full-stack content management system featuring robust user authentication and rich-text post generation using React, Appwrite, and Redux Toolkit.
 
-## Project Highlights
-- **Inventory Management System with POS:** MERN app with user roles, inventory tracking, automated billing, and an admin dashboard for sales and stock insights.
-- **Complete Me (Next.js E‑commerce):** Product listings, user accounts, orders, and a lightweight admin panel built with Next.js App Router, TypeScript, and MongoDB.
-- **BlogWise Platform:** Full-stack blog with authentication, rich‑text posts, image uploads, and a modern responsive UI using React, Express, and Appwrite.
-- **IT Hub Agency Site:** Pug‑based dynamic pages with email service requests and MongoDB‑backed feedback management.
-
-## Focus Areas
-- MERN stack architecture and API design.
-- Frontend engineering with Tailwind CSS and component-driven UI.
-- State management with Redux Toolkit and client-side data flows.
-- Authentication with JWT and password hashing with Bcrypt.
+## Current Availability
+Actively seeking full-time Full-Stack or Next.js engineering roles. Currently based in Lahore, Pakistan, and available for immediate interviews.
 
 ## Contact
-Email: muhammadtalha.dev4197@gmail.com
-GitHub: https://github.com/TalhaRajput501
-LinkedIn: https://www.linkedin.com/in/m-talha-dev/
-Phone: +92 3191748730
+- Email: muhammadtalha.dev4197@gmail.com
+- GitHub: https://github.com/TalhaRajput501
+- LinkedIn: https://www.linkedin.com/in/m-talha-dev/
+- Portfolio: https://www.talhadev.tech/
+- Phone: +92 3191748730
