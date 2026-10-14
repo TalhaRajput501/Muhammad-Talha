@@ -27,7 +27,7 @@ function Projects() {
           title="HandoutAI"
           description="AI-powered platform that turns university handouts into MCQ practice quizzes. Students can study, test, track progress and improve."
           image="/handout.png"
-          technology={['Next.js', 'TypeScript', 'MongoDB', 'AI']}
+          technology={['Next.js', 'TypeScript', 'MongoDB', 'AI', 'Node.js']}
           // link="https://handoutai.vercel.app/"
           link="https://handoutai.online/"
           gitHubLink="https://github.com/TalhaRajput501"
@@ -48,7 +48,7 @@ function Projects() {
           title="E-Commerce Platform"
           description="Full-featured e-commerce platform with product management, cart, payments, and order tracking. Designed with administrative order management views."
           image="./ecom.png"
-          technology={['Next.js', 'Stripe', 'Tailwind', 'MongoDB']}
+          technology={['Next.js', 'Stripe', 'Tailwind', 'MongoDB', 'Node.js', ]}
           link="https://complete-me-beta.vercel.app/"
           gitHubLink="https://github.com/TalhaRajput501/completeMe"
         />

@@ -177,8 +177,7 @@ export default function Contact() {
               </Link>
 
               {/* response */}
-              <Link
-                href="/#"
+              <div
                 // target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 sm:gap-4 rounded-xl border border-white/5 bg-white/[0.02] px-3 sm:px-4 py-3.5 text-gray-300 transition-all duration-200 hover:-translate-y-0.5 hover:border-purple-500/40 hover:bg-purple-950/20 hover:text-white"
@@ -196,7 +195,7 @@ export default function Contact() {
                     Within 24 hours
                   </span>
                 </div>
-              </Link>
+              </div>
 
             </div>
           </div>
