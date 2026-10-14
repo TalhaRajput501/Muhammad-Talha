@@ -55,7 +55,7 @@ export const FeaturedProjectCard = ({ title, description, image, link, gitHubLin
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-hover transition-colors w-full"
           >
-            Live Demo
+            Try as guest
             <ExternalLink className="w-4 h-4" />
           </Link>
           <Link

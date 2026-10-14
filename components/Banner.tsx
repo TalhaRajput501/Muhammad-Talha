@@ -9,22 +9,24 @@ function Banner() {
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-surface text-sm font-medium text-text-secondary">
+          {/* <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-surface text-sm font-medium text-text-secondary">
             <span className="w-2 h-2 rounded-full bg-success animate-pulse"></span>
-            Full-Stack Developer
-          </div>
+            Full-Stack Developer - Open to roles
+          </div> */}
 
           <div className="space-y-2">
             <h1 className="text-5xl sm:text-6xl font-extrabold text-foreground tracking-tight">
               Hi, I'm <span className="text-transparent bg-clip-text bg-primary">Talha</span>
             </h1>
-            <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground">
-              I build web applications<br />that <span className="text-transparent bg-clip-text bg-primary">solve real problems.</span>
-            </h2>
+            {/* <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground">
+              a Full-stack engineer<br /><span className="text-transparent bg-clip-text bg-primary">who ships to production.</span>
+            </h2> */}
           </div>
 
           <p className="text-lg text-text-secondary max-w-xl leading-relaxed">
-            Full-stack developer specializing in MERN stack and modern technologies. I build scalable, user-friendly solutions that deliver real value.
+            A <span className='font-bold '>full-stack developer </span> who loves coding, tech, and building cool stuff. I build clean, modern web applications using <span className='font-bold '>TypeScript</span>, <span className='font-bold '>React</span>, <span className='font-bold '>Next.js</span>, and <span className='font-bold '>Express.js</span>.
+          </p>
+          <p className="text-md text-text-secondary max-w-xl">I'm Open to <span className='font-bold '>freelance projects </span>, <span className='font-bold '>collaborations</span>, and <span className='font-bold '>full-time opportunities</span>.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 w-full justify-center sm:justify-start">

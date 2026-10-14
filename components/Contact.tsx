@@ -9,6 +9,7 @@ import {
   Send,
   CheckCircle2,
   Loader2,
+  TimerIcon,
 } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 import Link from 'next/link'
@@ -89,8 +90,9 @@ export default function Contact() {
               Reach out through any platform below or drop a direct message.
             </p>
 
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-4.5">
 
+              {/* mail */}
               <Link
                 href="mailto:muhammadtalha.dev4197@gmail.com"
                 className="group flex items-center gap-3 sm:gap-4 rounded-xl border border-white/5 bg-white/[0.02] px-3 sm:px-4 py-3.5 text-gray-300 transition-all duration-200 hover:-translate-y-0.5 hover:border-purple-500/40 hover:bg-purple-950/20 hover:text-white"
@@ -110,6 +112,7 @@ export default function Contact() {
                 </div>
               </Link>
 
+              {/* call */}
               <Link
                 href="tel:+923191748730"
                 className="group flex items-center gap-3 sm:gap-4 rounded-xl border border-white/5 bg-white/[0.02] px-3 sm:px-4 py-3.5 text-gray-300 transition-all duration-200 hover:-translate-y-0.5 hover:border-purple-500/40 hover:bg-purple-950/20 hover:text-white"
@@ -129,6 +132,7 @@ export default function Contact() {
                 </div>
               </Link>
 
+              {/* github */}
               <Link
                 href="https://github.com/TalhaRajput501"
                 target="_blank"
@@ -150,6 +154,7 @@ export default function Contact() {
                 </div>
               </Link>
 
+              {/* linkedin */}
               <Link
                 href="https://www.linkedin.com/in/m-talha-dev/"
                 target="_blank"
@@ -162,11 +167,33 @@ export default function Contact() {
 
                 <div className="overflow-hidden min-w-0">
                   <div className="text-xs text-gray-500 font-medium">
-                    LinkedIn Network
+                    Expected Response Time
                   </div>
 
                   <span className="block truncate font-semibold text-sm">
                     linkedin.com/in/m-talha-dev
+                  </span>
+                </div>
+              </Link>
+
+              {/* response */}
+              <Link
+                href="/#"
+                // target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 sm:gap-4 rounded-xl border border-white/5 bg-white/[0.02] px-3 sm:px-4 py-3.5 text-gray-300 transition-all duration-200 hover:-translate-y-0.5 hover:border-purple-500/40 hover:bg-purple-950/20 hover:text-white"
+              >
+                <div className="shrink-0 p-2 rounded-lg bg-purple-950/40 text-purple-400 border border-purple-500/20 group-hover:border-purple-500/50 transition-colors">
+                  <TimerIcon className="h-5 w-5" />
+                </div>
+
+                <div className="overflow-hidden min-w-0">
+                  <div className="text-xs text-gray-500 font-medium">
+                    Expected Response Time
+                  </div>
+
+                  <span className="block truncate font-semibold text-sm">
+                    Within 24 hours
                   </span>
                 </div>
               </Link>
