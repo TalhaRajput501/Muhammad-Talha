@@ -49,7 +49,8 @@ function Projects() {
           description="Full-featured e-commerce platform with product management, cart, payments, and order tracking. Designed with administrative order management views."
           image="./ecom.png"
           technology={['Next.js', 'Stripe', 'Tailwind', 'MongoDB', 'Node.js', ]}
-          link="https://complete-me-beta.vercel.app/"
+          // link="https://complete-me-beta.vercel.app/"
+          link="https://ecom.talhadev.tech/"
           gitHubLink="https://github.com/TalhaRajput501/completeMe"
         />
 
